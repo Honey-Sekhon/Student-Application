@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add User</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #CAF0F8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center  mt-5 mb-4">
+            <div class="col-md-4">
+                <h1 class="text-center">New Student</h1>
+                <form action="/students/add" method="post">
+                    <div class="row mb-3">
+                        <label for="name" class="col-sm-2 col-form-label">Name:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="weight" class="col-sm-2 col-form-label">Weight:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="weight" name="weight"
+                                placeholder="Enter weight in kgs">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="height" class="col-sm-2 col-form-label">Height:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="height" name="height"
+                                placeholder="Enter height in meters">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="hairColor" class="col-sm-2 col-form-label">Hair Color:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="hairColor" name="hairColor"
+                                placeholder="Enter hair color">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="gpa" class="col-sm-2 col-form-label">GPA:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="gpa" name="gpa" placeholder="Enter GPA">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="nationality" class="col-sm-2 col-form-label">Nationality:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="nationality" name="nationality"
+                                placeholder="Enter nationality">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-sm-10 offset-sm-2">
+                            <button type="submit" class="btn btn-primary" value="SEND">Add Student</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
