@@ -110,7 +110,7 @@ public class studentController {
     public String displayStudents(Model model) {
         List<Student> dispStuds = studentRepo.findAll();
         model.addAttribute("DispStudents", dispStuds);
-        return "/students/display";
+        return "/students/displayStudents";
     }
 
 }
