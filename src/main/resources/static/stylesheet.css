@@ -1,0 +1,12 @@
+.rectangle {
+    text-align: center;
+    justify-content: center;
+    background-color: lightblue;
+    border: 1px solid rgb(0, 60, 92);
+    overflow: scroll;
+    margin: 10px;
+}
+
+.col {
+    display: contents;
+}
