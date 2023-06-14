@@ -57,7 +57,7 @@ public class studentController {
         if (!studentToBeEdited.isEmpty()) {
             Student student = studentToBeEdited.get(0);
             model.addAttribute("student", student);
-            return "/students/updateStudent";
+            return "students/updateStudent";
         } else {
             System.out.println("Student Not found");
             return "error";
@@ -110,7 +110,7 @@ public class studentController {
     public String displayStudents(Model model) {
         List<Student> dispStuds = studentRepo.findAll();
         model.addAttribute("DispStudents", dispStuds);
-        return "/students/displayStudents";
+        return "students/displayStudents";
     }
 
 }
